@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, screen, userEvent, rerender } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Show from './../Show';
 
@@ -45,7 +45,7 @@ test('handleSelect is called when an season is selected', () => {
     // const handleSelect = jest.fn();
     // render(<Show show={showTest} selectedSeason={'none'} handleSelect={handleSelect} />);
     // const select = screen.getByLabelText(/Select a Season/i);
-    // userEvent.selectOptions(select, ['1']);
+    // fireEvent.selectOptions(select, ['1']);
 
     // expect(handleSelect).toBeCalled();
 });
